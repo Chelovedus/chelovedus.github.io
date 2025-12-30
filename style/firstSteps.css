@@ -1,0 +1,54 @@
+:root
+{
+    --header-background-color: rgb(237, 106, 90);
+    --main-background-color: rgb(244, 241, 187);
+    --footer-background-color: rgb(155, 193, 188);
+}
+
+.header
+{
+    background-color: var(--header-background-color);
+}
+
+#nav-buttons
+{
+    display: flex; justify-content: center
+}
+
+.main
+{
+    background-color: var(--main-background-color);
+}
+
+.footer
+{
+    background-color: var(--footer-background-color);
+}
+
+.footer p 
+{
+    margin: 0;
+}
+
+.round-crop-image
+{
+    border-radius: 0%;
+    transition: border-radius 0.2s ease;
+}
+
+.round-crop-image:hover
+{
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.screenshots-review
+{
+    border-radius: 1%;
+    width: 500px;
+}
+
+.gray-emoji
+{
+    filter: saturate(0);
+}

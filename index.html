@@ -4,41 +4,11 @@
 <head>
     <title>My first PAGE?!</title>
     <meta charset="utf-8">
-    <style>
-        :root
-        {
-            --header-background-color: rgb(237, 106, 90);
-            --main-background-color: rgb(244, 241, 187);
-            --footer-background-color: rgb(155, 193, 188);
-        }
-        
-        .round-crop-image
-        {
-            border-radius: 0%;
-            transition: border-radius 0.2s ease;
-        }
-        
-        .round-crop-image:hover
-        {
-            border-radius: 50%;
-            border: 2px solid;
-        }
-        
-        .screenshots-review
-        {
-            border-radius: 1%;
-            width: 500px;
-        }
-
-        .gray-emoji
-        {
-            filter: saturate(0);
-        }
-    </style>
+    <link rel="stylesheet" href="style/firstSteps.css">
 </head>
 
 <body>
-    <header style="background-color: var(--header-background-color);">
+    <header class="header">
         <!--Upper left header-->
         <section style="float: left;">
             <q lang="de"><strong>This is test text.</strong> Just a raw text.
@@ -61,15 +31,13 @@
 
     <nav>
         <!--Upper middle header-->
-        <section style="display: flex; justify-content: center">
-
+        <section id="nav-buttons">
             <a href="page.html"><button>GO TO THE FUTURE</button></a>
-            <p style="color: blue; filter: sepia(1) hue-rotate(190deg) drop-shadow(0 0 .01ex blue) saturate(9)";>🌟
         </section>
     </nav>
     <hr>
 
-    <main style="background-color: var(--main-background-color);">
+    <main class="main">
         <article>
             <table>
                 <tr>
@@ -124,8 +92,8 @@
         </article>
     </main>
     <hr>
-    <footer style="background-color: var(--footer-background-color);">
-        <p style="margin: 0;">Links:
+    <footer class="footer">
+        <p>Links:
         <br><a href="https://youtu.be/CYRgAVQOTv8?list=PLMB6wLyKp7lV9YoWTMCztq-KXYhYPB09K&t=2048">Education video about HTML 5</a>
         <br><a href="https://validator.w3.org/nu/#file">Check on warnings in my HTML5 syntax</a></p>
     </footer>
