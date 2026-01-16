@@ -5,9 +5,42 @@
     --footer-background-color: rgb(155, 193, 188);
 }
 
+body
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+table
+{
+    
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
 .header
 {
     background-color: var(--header-background-color);
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+}
+
+.header a:link
+{
+    color: rgb(223, 223, 223);
+}
+.header p::first-letter
+{
+    font-size: 27px;
 }
 
 #nav-buttons
