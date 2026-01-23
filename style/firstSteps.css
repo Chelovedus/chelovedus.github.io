@@ -8,9 +8,7 @@
 
 :root
 {
-    --header-background-color: rgb(237, 106, 90);
-    --main-background-color: rgb(244, 241, 187);
-    --footer-background-color: rgb(155, 193, 188);
+    
 }
 
 body
@@ -35,6 +33,11 @@ a
 a:hover
 {
     text-decoration: underline;
+}
+
+.author-block
+{
+    text-align: right
 }
 
 .header a:link
@@ -74,7 +77,6 @@ a:hover
     padding: 1em;
     position: relative;
 }
-
 
 .header::before, .main::before, .footer::before
 {
@@ -168,6 +170,8 @@ a:hover
     max-height: 70px;
     margin: 0 auto;
     filter: blur(2px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 /* 4. COMPONENTS & UI ELEMENTS */
@@ -188,12 +192,15 @@ a:hover
     margin-right: 20px;
     transition: 
         box-shadow 0.4s ease,
-        background-color  0.5s ease;
+        background-color 0.5s ease,
+        transform 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-button:hover
 {
     background: #ffb300;
+    transform: translateY(4px);
     box-shadow: 1px 1px #0000006c;
 }
 
@@ -221,6 +228,7 @@ td, th
 {
     border-radius: 50%;
     border: 2px solid;
+    cursor: no-drop;
 }
 
 .screenshots-review
@@ -233,9 +241,14 @@ td, th
     filter: saturate(0);
 }
 
-.footer
+.page:has(.footer:hover) .below-footer {
+    opacity: 1;
+}
+
+.page:has(.round-crop-image:hover) .author-block h3
 {
-    
+    font-size: calc();
+    color: red;
 }
 
 .tag-entity
@@ -253,3 +266,5 @@ td, th
 6. Images & Media - Visual elements
 7. Utilities - Helper classes
 */
+
+/*! NEEEED A HOVER IMAGE RED TEXT */
