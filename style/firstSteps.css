@@ -13,6 +13,8 @@
 
 body
 {
+    /* cursor: url(/img/cursor.cur), auto; */
+    scroll-behavior: smooth;
     max-width: 1920px;
     margin: 0 auto;
     padding: 20px;
@@ -37,7 +39,14 @@ a:hover
 
 .author-block
 {
-    text-align: right
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    min-width: 140px;
+    min-height: 180px;
 }
 
 .header a:link
@@ -57,13 +66,22 @@ a:hover
     font-weight: bolder;
 }
 
+.header a:hover
+{
+    color: #000;
+    text-shadow: 1px 3px #d22395;
+    text-decoration: underline;
+}
+
 .header
 {
     font-family: "Pacifico", Arial, Helvetica, sans-serif;
     letter-spacing: 1.1px;
     word-spacing: 4px;
     position: relative;
+    min-height: 194px;
 }
+
 
 .footer p 
 {
@@ -101,6 +119,12 @@ a:hover
     z-index: -1;
     top: -400%;
     outline: 5px solid #3e1634;
+    transition: filter 0.5s ease;
+}
+
+.page:has(.header:hover) .header::before
+{
+    filter: blur(4px);
 }
 
 .main
@@ -245,16 +269,115 @@ td, th
     opacity: 1;
 }
 
-.page:has(.round-crop-image:hover) .author-block h3
+.author-block h3
 {
-    font-size: calc();
-    color: red;
+    min-height: 1.5em;
+    display: block;
+    transition: color 0.3s ease,
+                font-size 0.3s ease;
 }
 
-.tag-entity
+.page:has(.round-crop-image:hover) .author-block h3
 {
+    font-size: calc(1.17em - 1px);
+    text-shadow: 1px 3px #d22395;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline; */
+}
+
+
+
+
+
+
+
+.titles-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    border: 2px solid red; /* DEBUG */
+}
+
+.title-block
+{
+    box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid green; /* DEBUG */
+    overflow: hidden;
+    background-size: 100%;
+    transition: 
+        background-size 0.3s ease;
+}
+
+.title-block:hover
+{
+    background-size: 120% ;
+}
+
+.title-content-block
+{
+    font-family: "Pacifico", 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow; /* DEBUG */
+    position: absolute;
+    bottom: -70%;
+}
+
+.title-name
+{
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    border: 2px solid white; /* DEBUG */
+}
+
+.title-rating
+{
+
+}
+
+.title-description
+{
+    border: 2px solid black; /* DEBUG */
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .title-block {
+    flex: 100%;
+  }
+}
+
+
+
 
 
 /*
@@ -266,5 +389,3 @@ td, th
 6. Images & Media - Visual elements
 7. Utilities - Helper classes
 */
-
-/*! NEEEED A HOVER IMAGE RED TEXT */
