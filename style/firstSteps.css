@@ -298,6 +298,8 @@ td, th
     justify-content: center;
     text-align: left;
     border: 2px solid red; /* DEBUG */
+    flex: 100%;
+    gap: 5px;
 }
 
 .title-block
@@ -313,12 +315,17 @@ td, th
     overflow: hidden;
     background-size: 100%;
     transition: 
-        background-size 0.3s ease;
+        background-size 0.4s cubic-bezier(0.69, 0.16, 0.76, 0.79);
 }
 
 .title-block:hover
 {
-    background-size: 120% ;
+    background-size: 110%;
+}
+
+.title-block:hover .title-content-block
+{
+    bottom: 0%;
 }
 
 .title-content-block
@@ -332,6 +339,8 @@ td, th
     border: 2px solid yellow; /* DEBUG */
     position: absolute;
     bottom: -70%;
+    transition:
+        bottom 0.4s cubic-bezier(0.42, 0.00, 0.58, 1.00);
 }
 
 .title-name
@@ -342,9 +351,9 @@ td, th
     border: 2px solid white; /* DEBUG */
 }
 
-.title-rating
+.title-genres
 {
-
+    text-align: right;
 }
 
 .title-description
