@@ -1,32 +1,218 @@
 [
-    {
-        "title": "Plastic Memories",
-        "description": "Дорогие друзья, реализация намеченного плана развития позволяет выполнить важнейшие задания по разработке направлений прогрессивного развития! Дорогие друзья, новая модель организационной деятельности требует от нас анализа экономической целесообразности принимаемых решений. Практический опыт показывает, что дальнейшее развитие различных форм деятельности требует от нас системного анализа позиций, занимаемых участниками в отношении поставленных задач.",
-        "genres": "Drama, Romance",
-        "image": ""
-    },
-    {
-        "title": "Plastic Memories",
-        "description": "Test eteeeest",
-        "genres": "Nyaaaa",
-        "image": "wa"
-    },
-    {
-        "title": "Plastic Memories",
-        "description": "Test eteeeest",
-        "genres": "Nyaaaa",
-        "image": "wa"
-    },
-    {
-        "title": "Plastic Memories",
-        "description": "Test eteeeest",
-        "genres": "Nyaaaa",
-        "image": "wa"
-    },
-    {
-        "title": "Plastic Memories",
-        "description": "Test eteeeest",
-        "genres": "Nyaaaa",
-        "image": "wa"
-    }
+  {
+    "title": "Plastic Memories",
+    "description": "В мире андроидов с ограниченным сроком службы сотрудники особого отдела помогают людям прощаться. Трогательная история о любви, времени и неизбежных расставаниях.",
+    "genres": "Romance, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Sword Art Online",
+    "description": "Игроки оказываются заперты в виртуальных мирах, где поражение может стоить жизни. История выживания, развития ИИ и отношений на фоне технологий будущего.",
+    "genres": "Fantasy, Romance, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Darling in the FranXX",
+    "description": "Подростки пилотируют боевые машины, защищая остатки человечества. На фоне войны разворачивается драма о близости, идентичности и взрослении.",
+    "genres": "Romance, Drama, Fantasy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Charlotte",
+    "description": "Подростки с нестабильными сверхспособностями сталкиваются с последствиями своих решений. История о цене силы, ответственности и утрате.",
+    "genres": "Drama, Psychological",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Kimi no Na wa.",
+    "description": "Два незнакомца таинственно связаны сквозь расстояние и время. Попытка найти друг друга превращается в эмоциональное путешествие.",
+    "genres": "Romance, Drama, Fantasy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Byousoku 5 Centimeter",
+    "description": "Несколько историй о любви, которая медленно растворяется из-за времени, расстояния и нерешительности.",
+    "genres": "Romance, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Angel Beats!",
+    "description": "После смерти подростки попадают в странный мир, где им предстоит принять своё прошлое и сделать выбор, чтобы двигаться дальше.",
+    "genres": "Drama, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "No Game No Life",
+    "description": "Гениальные игроки попадают в мир, где любые конфликты решаются играми. Логика и интеллект становятся главным оружием.",
+    "genres": "Fantasy, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "description": "Парень попадает в другой мир и снова и снова возвращается к определённому моменту после смерти. Каждая ошибка оставляет психологический след.",
+    "genres": "Fantasy, Drama, Psychological",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Tensei shitara Slime Datta Ken",
+    "description": "Переродившись слизью, герой начинает строить собственное государство в фэнтезийном мире, полагаясь на дипломатию и силу.",
+    "genres": "Fantasy, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Date a Live",
+    "description": "Чтобы предотвратить катастрофы, парень должен наладить отношения с духами. Романтика, юмор и битвы переплетаются на протяжении всей истории.",
+    "genres": "Romance, Fantasy, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Zero no Tsukaima",
+    "description": "Неумелая волшебница случайно призывает обычного парня из другого мира, и их вынужденное партнёрство меняет обоих.",
+    "genres": "Fantasy, Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Black Bullet",
+    "description": "Мрачное будущее, где дети с особыми способностями сражаются с чудовищами ради выживания человечества.",
+    "genres": "Drama, Psychological, Fantasy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Akame ga Kill!",
+    "description": "Группа наёмных убийц борется с коррумпированной империей. Каждая победа даётся ценой тяжёлых потерь.",
+    "genres": "Drama, Psychological, Fantasy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Fate (Stay Night / Prisma Illya)",
+    "description": "Магические войны за исполнение желаний, призванные герои прошлого и разные взгляды на одну судьбу в рамках вселенной Fate.",
+    "genres": "Fantasy, Drama, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "OreGairu",
+    "description": "История школьников, которые учатся быть честными с собой и другими. Диалоги, самоанализ и сложные чувства выходят на первый план.",
+    "genres": "Romance, Drama, Psychological",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Baka to Test to Shoukanjuu",
+    "description": "Ученики сражаются с помощью призываемых аватаров, где сила напрямую зависит от успеваемости.",
+    "genres": "Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Mirai Nikki",
+    "description": "Игра на выживание, где участники знают будущее, но не могут избежать безумия и предательства.",
+    "genres": "Psychological, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Happy Sugar Life",
+    "description": "История искажённой любви, где за внешней милотой скрываются жестокость и психологический ужас.",
+    "genres": "Psychological, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Horimiya",
+    "description": "Повседневная школьная романтика о принятии настоящего себя и близости без притворства.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Ijiranaide, Nagatoro-san",
+    "description": "От неловких поддразниваний до постепенного сближения между застенчивым парнем и дерзкой девушкой.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Kill la Kill",
+    "description": "Экстремальная школьная битва за власть, где одежда даёт силу, а абсурд скрывает серьёзные темы.",
+    "genres": "Fantasy, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Jashin-chan Dropkick",
+    "description": "Абсурдная комедия о демоне, застрявшем в мире людей и постоянно попадающем в нелепые ситуации.",
+    "genres": "Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Release the Spyce",
+    "description": "Школьницы тайно работают шпионами, защищая город от скрытых угроз.",
+    "genres": "Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Toaru Majutsu no Index",
+    "description": "Мир, где наука и магия сосуществуют, а обычный школьник оказывается в центре глобальных конфликтов.",
+    "genres": "Fantasy, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Kishuku Gakkou no Juliet",
+    "description": "Запретная любовь двух лидеров враждующих школьных лагерей, скрытая от окружающих.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Tokyo Ravens",
+    "description": "Магия, проклятия и древние ритуалы переплетаются с судьбой школьников.",
+    "genres": "Fantasy, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Higurashi no Naku Koro ni",
+    "description": "На первый взгляд тихая деревня снова и снова погружается в цикл паранойи, насилия и безысходности.",
+    "genres": "Psychological, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Seto no Hanayome",
+    "description": "Парень вынужден жениться на русалке, чтобы избежать смертельных последствий случайной встречи.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+    "description": "Школьная романтика, где истинные чувства иногда вырываются наружу на русском языке.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Masamune-kun no Revenge",
+    "description": "История о мести, которая постепенно превращается в запутанный романтический конфликт.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Shigatsu wa Kimi no Uso",
+    "description": "Музыка помогает подросткам справиться с утратой, болью и страхом снова чувствовать.",
+    "genres": "Romance, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Nisemonogatari",
+    "description": "Диалоги, обман и моральные дилеммы в повседневности необычной семьи.",
+    "genres": "Psychological, Comedy",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "description": "Школьники-экзорцисты сражаются с проклятиями, рождёнными человеческими эмоциями.",
+    "genres": "Fantasy, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Gimai Seikatsu",
+    "description": "Сводные брат и сестра учатся жить вместе, когда повседневность начинает перерастать в чувства.",
+    "genres": "Romance, Drama",
+    "image": "/img/anime-titles/"
+  },
+  {
+    "title": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri!",
+    "description": "Комедийная история о путанице в отношениях, самообмане и неожиданной близости.",
+    "genres": "Romance, Comedy",
+    "image": "/img/anime-titles/"
+  }
 ]

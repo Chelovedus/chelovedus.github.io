@@ -73,6 +73,14 @@ a:hover
     text-decoration: underline;
 }
 
+.header-deformation
+{
+    animation-name: animation-deformation-header;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    display: inline-block;
+}
+
 .header
 {
     font-family: "Pacifico", Arial, Helvetica, sans-serif;
@@ -377,7 +385,20 @@ td, th
 
 
 
-
+@keyframes animation-deformation-header {
+    99%
+    {
+        transform: skew(0deg);
+    }
+    99.61%
+    {
+        transform: skew(140deg);
+    }
+    99.32%
+    {
+        transform: skew(0deg);
+    }
+}
 
 @media (max-width: 500px) {
   .title-block {
