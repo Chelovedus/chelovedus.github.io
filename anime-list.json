@@ -3,121 +3,115 @@
     "title": "Plastic Memories",
     "description": "В мире андроидов с ограниченным сроком службы сотрудники особого отдела помогают людям прощаться. Трогательная история о любви, времени и неизбежных расставаниях.",
     "genres": "Romance, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/PlasticMemories.jpg"
   },
   {
     "title": "Sword Art Online",
     "description": "Игроки оказываются заперты в виртуальных мирах, где поражение может стоить жизни. История выживания, развития ИИ и отношений на фоне технологий будущего.",
     "genres": "Fantasy, Romance, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/SAO.jpg"
   },
   {
     "title": "Darling in the FranXX",
     "description": "Подростки пилотируют боевые машины, защищая остатки человечества. На фоне войны разворачивается драма о близости, идентичности и взрослении.",
     "genres": "Romance, Drama, Fantasy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/DarlingInTheFranXX.jpg"
   },
   {
     "title": "Charlotte",
     "description": "Подростки с нестабильными сверхспособностями сталкиваются с последствиями своих решений. История о цене силы, ответственности и утрате.",
     "genres": "Drama, Psychological",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/Charlotte.jpg"
   },
   {
     "title": "Kimi no Na wa.",
     "description": "Два незнакомца таинственно связаны сквозь расстояние и время. Попытка найти друг друга превращается в эмоциональное путешествие.",
     "genres": "Romance, Drama, Fantasy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/KimiNoNaWa.jpg"
   },
   {
     "title": "Byousoku 5 Centimeter",
     "description": "Несколько историй о любви, которая медленно растворяется из-за времени, расстояния и нерешительности.",
     "genres": "Romance, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/Byousoku5Centimeter.jpg"
   },
   {
     "title": "Angel Beats!",
     "description": "После смерти подростки попадают в странный мир, где им предстоит принять своё прошлое и сделать выбор, чтобы двигаться дальше.",
     "genres": "Drama, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/AngelBeats!.jpg"
   },
   {
     "title": "No Game No Life",
     "description": "Гениальные игроки попадают в мир, где любые конфликты решаются играми. Логика и интеллект становятся главным оружием.",
     "genres": "Fantasy, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/NoGameNoLife.jpg"
   },
   {
-    "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "title": "Re:Zero",
     "description": "Парень попадает в другой мир и снова и снова возвращается к определённому моменту после смерти. Каждая ошибка оставляет психологический след.",
     "genres": "Fantasy, Drama, Psychological",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/ReZero.jpg"
   },
   {
     "title": "Tensei shitara Slime Datta Ken",
     "description": "Переродившись слизью, герой начинает строить собственное государство в фэнтезийном мире, полагаясь на дипломатию и силу.",
     "genres": "Fantasy, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/TenseiShitaraSlimeDattaKen.jpg"
   },
   {
     "title": "Date a Live",
     "description": "Чтобы предотвратить катастрофы, парень должен наладить отношения с духами. Романтика, юмор и битвы переплетаются на протяжении всей истории.",
     "genres": "Romance, Fantasy, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/DateALive.jpg"
   },
   {
     "title": "Zero no Tsukaima",
     "description": "Неумелая волшебница случайно призывает обычного парня из другого мира, и их вынужденное партнёрство меняет обоих.",
     "genres": "Fantasy, Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/ZeroNoTsukaima.jpeg"
   },
   {
     "title": "Black Bullet",
     "description": "Мрачное будущее, где дети с особыми способностями сражаются с чудовищами ради выживания человечества.",
     "genres": "Drama, Psychological, Fantasy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/BlackBullet.jpg"
   },
   {
     "title": "Akame ga Kill!",
     "description": "Группа наёмных убийц борется с коррумпированной империей. Каждая победа даётся ценой тяжёлых потерь.",
     "genres": "Drama, Psychological, Fantasy",
-    "image": "/img/anime-titles/"
-  },
-  {
-    "title": "Fate (Stay Night / Prisma Illya)",
-    "description": "Магические войны за исполнение желаний, призванные герои прошлого и разные взгляды на одну судьбу в рамках вселенной Fate.",
-    "genres": "Fantasy, Drama, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/AkameGaKill.png"
   },
   {
     "title": "OreGairu",
     "description": "История школьников, которые учатся быть честными с собой и другими. Диалоги, самоанализ и сложные чувства выходят на первый план.",
     "genres": "Romance, Drama, Psychological",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/OreGairu.jpg"
   },
   {
-    "title": "Baka to Test to Shoukanjuu",
+    "title": "Baka to Test",
     "description": "Ученики сражаются с помощью призываемых аватаров, где сила напрямую зависит от успеваемости.",
     "genres": "Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/BakaToTest.jpg"
   },
   {
     "title": "Mirai Nikki",
     "description": "Игра на выживание, где участники знают будущее, но не могут избежать безумия и предательства.",
     "genres": "Psychological, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/MiraiNikki.jpg"
   },
   {
     "title": "Happy Sugar Life",
     "description": "История искажённой любви, где за внешней милотой скрываются жестокость и психологический ужас.",
     "genres": "Psychological, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/HappySugarLife.png"
   },
   {
     "title": "Horimiya",
     "description": "Повседневная школьная романтика о принятии настоящего себя и близости без притворства.",
     "genres": "Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/Horimiya.jpeg"
   },
   {
     "title": "Ijiranaide, Nagatoro-san",
