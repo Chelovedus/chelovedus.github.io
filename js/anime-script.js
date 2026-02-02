@@ -4,7 +4,7 @@ const template = document.getElementById('title-block-template');
 const container = document.querySelector('.titles-container');
 
 async function loadAnimeData() {
-    let response =  await fetch('../anime-list.json');
+    let response =  await fetch('/data/anime-list.json');
     let fileData = await response.json();
     processAnimeData(fileData);
 }
@@ -13,11 +13,11 @@ function processAnimeData(fileData)
 {
     let i = 0;
     while (i < fileData.length) {
-        const element = template.content.cloneNode(true);
-        const block = element.querySelector('.title-block');
-        const nameElement = element.querySelector('.title-name');
-        const descriptionElement = element.querySelector('.title-description');
-        const genresElement = element.querySelector('.title-genres');
+        let element = template.content.cloneNode(true);
+        let block = element.querySelector('.title-block');
+        let nameElement = element.querySelector('.title-name');
+        let descriptionElement = element.querySelector('.title-description');
+        let genresElement = element.querySelector('.title-genres');
 
         createElement(i, fileData, element, block, nameElement, descriptionElement, genresElement);
         i++;

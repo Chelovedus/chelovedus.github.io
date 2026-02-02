@@ -352,7 +352,7 @@ td, th
     transition:
         bottom var(--animation-time-titles) cubic-bezier(0.42, 0.00, 0.58, 1.00),
         backdrop-filter var(--animation-time-titles) ease,
-        text-shadow var(--animation-time-titles) ease;
+        text-shadow 0.6s ease;
 }
 
 .title-name
@@ -372,7 +372,6 @@ td, th
 .title-description
 {
     border: 2px solid black; /* DEBUG */
-    
 }
 
 

@@ -117,31 +117,31 @@
     "title": "Ijiranaide, Nagatoro-san",
     "description": "От неловких поддразниваний до постепенного сближения между застенчивым парнем и дерзкой девушкой.",
     "genres": "Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/Nagatoro.jpg"
   },
   {
     "title": "Kill la Kill",
     "description": "Экстремальная школьная битва за власть, где одежда даёт силу, а абсурд скрывает серьёзные темы.",
     "genres": "Fantasy, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/KilllaKill.jpg"
   },
   {
     "title": "Jashin-chan Dropkick",
     "description": "Абсурдная комедия о демоне, застрявшем в мире людей и постоянно попадающем в нелепые ситуации.",
     "genres": "Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/JashinChanDropkick.jpg"
   },
   {
     "title": "Release the Spyce",
     "description": "Школьницы тайно работают шпионами, защищая город от скрытых угроз.",
     "genres": "Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/ReleaseTheSpyce.jpg"
   },
   {
     "title": "Toaru Majutsu no Index",
     "description": "Мир, где наука и магия сосуществуют, а обычный школьник оказывается в центре глобальных конфликтов.",
     "genres": "Fantasy, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/ToaruMajutsuNoIndex.jpg"
   },
   {
     "title": "Kishuku Gakkou no Juliet",
@@ -153,13 +153,13 @@
     "title": "Tokyo Ravens",
     "description": "Магия, проклятия и древние ритуалы переплетаются с судьбой школьников.",
     "genres": "Fantasy, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/TokyoRavens.jpg"
   },
   {
     "title": "Higurashi no Naku Koro ni",
     "description": "На первый взгляд тихая деревня снова и снова погружается в цикл паранойи, насилия и безысходности.",
     "genres": "Psychological, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/HigurashiNoNakuKoroNi.jpg"
   },
   {
     "title": "Seto no Hanayome",
@@ -171,19 +171,19 @@
     "title": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
     "description": "Школьная романтика, где истинные чувства иногда вырываются наружу на русском языке.",
     "genres": "Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/AlyaSan.png"
   },
   {
     "title": "Masamune-kun no Revenge",
     "description": "История о мести, которая постепенно превращается в запутанный романтический конфликт.",
     "genres": "Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/MasamuneKun.png"
   },
   {
     "title": "Shigatsu wa Kimi no Uso",
     "description": "Музыка помогает подросткам справиться с утратой, болью и страхом снова чувствовать.",
     "genres": "Romance, Drama",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/ShigatsuWaKimiNoUso.jpg"
   },
   {
     "title": "Monogatari",
@@ -207,6 +207,6 @@
     "title": "Watashi ga Koibito ni Nareru Wake Nai jan, Muri Muri!",
     "description": "Комедийная история о путанице в отношениях, самообмане и неожиданной близости.",
     "genres": "Romance, Comedy",
-    "image": "/img/anime-titles/"
+    "image": "/img/anime-titles/WatashiGaKoibito.png"
   }
 ]
