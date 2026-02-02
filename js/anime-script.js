@@ -6,10 +6,10 @@ const container = document.querySelector('.titles-container');
 async function loadAnimeData() {
     let response =  await fetch('../anime-list.json');
     let fileData = await response.json();
-    creatorElement(fileData);
+    processAnimeData(fileData);
 }
 
-function creatorElement(fileData)
+function processAnimeData(fileData)
 {
     let i = 0;
     while (i < fileData.length) {

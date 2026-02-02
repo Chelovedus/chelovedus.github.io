@@ -8,7 +8,7 @@
 
 :root
 {
-    
+    --animation-time-titles: 0.4s;
 }
 
 body
@@ -203,7 +203,7 @@ a:hover
     margin: 0 auto;
     filter: blur(2px);
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity var(--animation-time-titles) ease;
 }
 
 /* 4. COMPONENTS & UI ELEMENTS */
@@ -334,6 +334,8 @@ td, th
 .title-block:hover .title-content-block
 {
     bottom: 0%;
+    backdrop-filter: blur(10px);
+    text-shadow: 1px 3px #d22395;
 }
 
 .title-content-block
@@ -348,7 +350,9 @@ td, th
     position: absolute;
     bottom: -70%;
     transition:
-        bottom 0.4s cubic-bezier(0.42, 0.00, 0.58, 1.00);
+        bottom var(--animation-time-titles) cubic-bezier(0.42, 0.00, 0.58, 1.00),
+        backdrop-filter var(--animation-time-titles) ease,
+        text-shadow var(--animation-time-titles) ease;
 }
 
 .title-name
@@ -361,7 +365,8 @@ td, th
 
 .title-genres
 {
-    text-align: right;
+    text-align: center;
+    display: inline-block;
 }
 
 .title-description
