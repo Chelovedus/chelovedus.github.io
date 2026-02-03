@@ -127,18 +127,48 @@ a:hover
     z-index: -1;
     top: -400%;
     outline: 5px solid #3e1634;
-    transition: filter 0.5s ease;
+    transition: 
+        filter 0.5s ease,
+        background-image 0.8s ease;
 }
 
 .page:has(.header:hover) .header::before
 {
     filter: blur(4px);
+    background-image: url(/img/BackgroundRedWithoutPeople.png);
 }
 
 .main
 {
     word-spacing: 4px;
     display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.favorite-text
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+.typed
+{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1.5s steps(30, end) both;
+}
+
+.pipe
+{
+    font-style: normal;
+    animation-name: animation-pipe-main;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
 }
 
 .main-left
@@ -372,6 +402,7 @@ td, th
 .title-description
 {
     border: 2px solid black; /* DEBUG */
+    font-family: "Caveat Brush", cursive;
 }
 
 
@@ -385,9 +416,37 @@ td, th
 
 
 
+@keyframes typing
+{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
 
-
-
+@keyframes animation-pipe-main
+{
+    0%
+    {
+        color: #000000
+    }
+    49%
+    {
+        color: #000000
+    }
+    50%
+    {
+        color: #00000000
+    }
+    100%
+    {
+        color: #00000000
+    }
+}
 
 @keyframes animation-deformation-header {
     99%
