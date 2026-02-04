@@ -9,6 +9,8 @@
 :root
 {
     --animation-time-titles: 0.4s;
+    --title-gradient-background-first: #000000f8;
+    --title-gradient-background-second: #00000000;
 }
 
 body
@@ -153,14 +155,10 @@ a:hover
     text-align: center;
     font-family: "Pacifico", Arial, Helvetica, sans-serif;
     font-size: 2.5em;
-}
-
-.typed
-{
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 1.5s steps(30, end) both;
+    color: #ff0080;
+    text-shadow: 
+        3px 3px 0 #ffcc00,
+        5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .pipe
@@ -169,6 +167,8 @@ a:hover
     animation-name: animation-pipe-main;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+    color: #000;
+    text-shadow: none;
 }
 
 .main-left
@@ -246,6 +246,7 @@ a:hover
 
 .nav-button
 {
+    font-family: "Caveat Brush", cursive;
     background: #c99e3b;
     border: 2px solid #bababa00;
     border-radius: 30px 60px;
@@ -368,6 +369,11 @@ td, th
     text-shadow: 1px 3px #d22395;
 }
 
+.title-block:hover .title-name
+{
+    background-image: url('/img/ui/gesture-bar-up.png'); 
+}
+
 .title-content-block
 {
     font-family: "Pacifico", 'Times New Roman', Times, serif;
@@ -376,9 +382,9 @@ td, th
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow; /* DEBUG */
+    /* border: 2px solid yellow; DEBUG */
     position: absolute;
-    bottom: -70%;
+    bottom: -72%;
     transition:
         bottom var(--animation-time-titles) cubic-bezier(0.42, 0.00, 0.58, 1.00),
         backdrop-filter var(--animation-time-titles) ease,
@@ -390,7 +396,12 @@ td, th
     text-align: center;
     font-size: 2em;
     width: 100%;
-    border: 2px solid white; /* DEBUG */
+    /* border: 2px solid white; DEBUG */
+    color: #fff;
+    text-shadow: 0px 0px 5px #ff00bb;
+    background-image: url('/img/ui/gesture-bar.png');
+    background-repeat: repeat-x;
+    transition: background-image var(--animation-time-titles) ease;
 }
 
 .title-genres
@@ -415,18 +426,6 @@ td, th
 
 
 
-
-@keyframes typing
-{
-    0%
-    {
-        width: 0;
-    }
-    100%
-    {
-        width: 100%;
-    }
-}
 
 @keyframes animation-pipe-main
 {
