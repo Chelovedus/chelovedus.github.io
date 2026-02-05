@@ -140,6 +140,14 @@ a:hover
     background-image: url(/img/BackgroundRedWithoutPeople.png);
 }
 
+.page
+{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
 .main
 {
     word-spacing: 4px;
@@ -398,9 +406,12 @@ td, th
     width: 100%;
     color: #fff;
     text-shadow: 0px 0px 5px #ff00bb;
-    /* background-image: url('/img/ui/gesture-bar.png'); */
     background-repeat: repeat-x;
     transition: background-image var(--animation-time-titles) ease;
+    height: 28%; /* Высота относительно родителя */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* DEBUG */
     /* border: 2px solid white;  */
 }
@@ -463,10 +474,55 @@ td, th
     }
 }
 
-@media (max-width: 500px) {
-  .title-block {
-    flex: 100%;
-  }
+@media (max-width: 896px)
+{
+    .titles-container
+    {
+        width: 104%;
+        
+    }
+
+    .title-block {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 2 / 1;
+        height: auto;
+    }
+    .title-name
+    {
+        font-size: 1.5em;
+    }
+    .title-description
+    {
+        font-size: calc(3vw);
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header, .main, .footer {
+        padding: 0.5em;
+        margin: 10px 0;
+    }
+    
+    .author-block {
+        position: relative;
+        right: auto;
+        margin: 10px auto;
+    }
+    
+    .nav-button {
+        margin-right: 10px;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .favorite-text {
+        font-size: 1.8em;
+    }
 }
 
 
