@@ -4,10 +4,14 @@
 <head>
     <title>Favorite anime</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Pacifico&display=swap" rel="stylesheet" crossorigin="anonymous">
+    
+    <link rel="preload" href="/img/BackgroundRedWithoutPeople.png" as="image" type="image/png">
+
     <link rel="stylesheet" href="style/firstSteps.css">
 </head>
 
@@ -15,7 +19,7 @@
     <div class="page">
         <header class="header">
             <!--Upper left header-->
-            <section style="float: left;">
+            <section class="header-quotes">
                 <q lang="de">I like anime, computer games and cutest things</q>
                 <p>
                     Don`t give up!
@@ -56,7 +60,7 @@
         <div class="below-footer"></div>
 
         <template id="title-block-template">
-             <div class="title-block">
+             <div class="title-block gradient-border">
                     <div class="title-content-block">
                         <div class="title-name"></div>
                         <div class="title-genres"></div>

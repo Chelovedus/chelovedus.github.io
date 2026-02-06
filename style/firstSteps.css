@@ -79,7 +79,7 @@ a:hover
 {
     animation-name: animation-deformation-header;
     animation-iteration-count: infinite;
-    animation-duration: 18s;
+    animation-duration: 10s;
     display: inline-block;
 }
 
@@ -90,6 +90,7 @@ a:hover
     word-spacing: 4px;
     position: relative;
     min-height: 194px;
+    display: flex;
 }
 
 
@@ -144,8 +145,11 @@ a:hover
 {
     display: flex;
     flex-direction: column;
-    
+}
 
+.header-quotes
+{
+    float: left;
 }
 
 .main
@@ -344,7 +348,6 @@ td, th
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
-    border: 2px solid red; /* DEBUG */
     flex: 100%;
     gap: 5px;
 }
@@ -358,11 +361,18 @@ td, th
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid green; /* DEBUG */
     overflow: hidden;
     background-size: 100%;
     transition: 
         background-size 0.4s cubic-bezier(0.69, 0.16, 0.76, 0.79);
+}
+
+.gradient-border
+{
+    border: 2px solid transparent;
+    /* box-shadow: 8px 4px 5px #000000; */
+    animation: animation-gradient-border 20s ease-in-out infinite;
+
 }
 
 .title-block:hover
@@ -374,12 +384,7 @@ td, th
 {
     bottom: 0%;
     backdrop-filter: blur(10px);
-    text-shadow: 1px 2px #d22395;
-}
-
-.title-block:hover .title-name
-{
-    /* background-image: url('/img/ui/gesture-bar-up.png');  */
+    text-shadow: 1px 1px 1px #d22395;
 }
 
 .title-content-block
@@ -390,7 +395,6 @@ td, th
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid yellow; DEBUG */
     position: absolute;
     bottom: -72%;
     transition:
@@ -408,12 +412,10 @@ td, th
     text-shadow: 0px 0px 5px #ff00bb;
     background-repeat: repeat-x;
     transition: background-image var(--animation-time-titles) ease;
-    height: 28%; /* Высота относительно родителя */
+    height: 28%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* DEBUG */
-    /* border: 2px solid white;  */
 }
 
 .title-genres
@@ -424,7 +426,6 @@ td, th
 
 .title-description
 {
-    /* border: 2px solid black; DEBUG */
     font-family: "Caveat Brush", cursive;
     padding: 5px;
     text-align: center;
@@ -439,7 +440,29 @@ td, th
 
 
 
-
+@keyframes animation-gradient-border
+{
+    0%
+    {
+        border-image: linear-gradient(0deg, #ffea00, #ff0080) 1;
+    }
+    25%
+    {
+        border-image: linear-gradient(90deg, #ffea00, #ff0080) 1;
+    }
+    50%
+    {
+        border-image: linear-gradient(180deg, #ffea00, #ff0080) 1;
+    }
+    75%
+    {
+        border-image: linear-gradient(270deg, #ffea00, #ff0080) 1;
+    }
+    100%
+    {
+        border-image: linear-gradient(360deg, #ffea00, #ff0080) 1;
+    }
+}
 
 @keyframes animation-pipe-main
 {
@@ -469,10 +492,12 @@ td, th
     99.61%
     {
         transform: skew(140deg);
+        color: #ff0000;
     }
     99.32%
     {
         transform: skew(0deg);
+        color: #000;
     }
 }
 
@@ -480,8 +505,7 @@ td, th
 {
     .titles-container
     {
-        width: 104%;
-        
+        width: 104%;   
     }
 
     .title-block {
@@ -498,6 +522,17 @@ td, th
     {
         font-size: calc(3vw);
     }
+    .header-quotes
+    {
+        font-size: 10px;
+        max-width: 90%;
+        position: absolute;
+        bottom: 0;
+    }    
+    .author-block
+    {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
@@ -512,7 +547,6 @@ td, th
     
     .author-block {
         position: relative;
-        right: auto;
         margin: 10px auto;
     }
     
