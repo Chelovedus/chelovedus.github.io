@@ -374,7 +374,7 @@ td, th
 {
     bottom: 0%;
     backdrop-filter: blur(10px);
-    text-shadow: 1px 3px #d22395;
+    text-shadow: 1px 2px #d22395;
 }
 
 .title-block:hover .title-name
@@ -426,6 +426,8 @@ td, th
 {
     /* border: 2px solid black; DEBUG */
     font-family: "Caveat Brush", cursive;
+    padding: 5px;
+    text-align: center;
 }
 
 
