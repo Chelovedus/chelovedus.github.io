@@ -1,21 +1,17 @@
 /* 1. RESET & GLOBAL STYLES */
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root
-{
+:root {
     --animation-time-titles: 0.4s;
     --title-gradient-background-first: #000000f8;
     --title-gradient-background-second: #00000000;
 }
 
-body
-{
-    /* cursor: url(/img/cursor.cur), auto; */
+body {
     scroll-behavior: smooth;
     max-width: 1920px;
     margin: 0 auto;
@@ -23,69 +19,32 @@ body
     font-size: clamp(14px, 1.2vw, 16px);
 }
 
-/* 2. TEXT ELEMENTS */
-h1, h2, h3
-{
+/* 2. Typography */
+h1, h2, h3 {
     margin-bottom: 3px;
 }
 
-a
-{
+a {
     text-decoration: none;
     color: rgb(216, 219, 30);
 }
-
-a:hover
-{
+a:hover {
     text-decoration: underline;
 }
 
-.author-block
-{
+/* 3. LAYOUT SECTIONS */
+.page {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
-    align-items: center;
-    right: 10px;
-    min-width: 140px;
-    min-height: 180px;
 }
 
-.header a:link
-{
-    color: rgb(223, 223, 223);
-}
-.header p::first-letter
-{
-    font-size: 27px;
+.header, .main, .footer {
+    margin: 20px 0px 20px 0;
+    padding: 1em;
+    position: relative;
 }
 
-.header p, q
-{
-    color: #000;
-    font-size: 1.4em;
-    text-shadow: 1px 3px #d22395;
-    font-weight: bolder;
-}
-
-.header a:hover
-{
-    color: #000;
-    text-shadow: 1px 3px #d22395;
-    text-decoration: underline;
-}
-
-.header-deformation
-{
-    animation-name: animation-deformation-header;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    display: inline-block;
-}
-
-.header
-{
+.header {
     font-family: "Pacifico", Arial, Helvetica, sans-serif;
     letter-spacing: 1.1px;
     word-spacing: 4px;
@@ -94,16 +53,15 @@ a:hover
     display: flex;
 }
 
-/* 3. LAYOUT SECTIONS */
-.header, .main, .footer
-{
-    margin: 20px 0px 20px 0;
-    padding: 1em;
-    position: relative;
+.main {
+    word-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 
-.header::before, .main::before, .footer::before
-{
+/* 4. COMPONENTS & UI ELEMENTS */
+.header::before, .main::before, .footer::before {
     content: "";
     position: absolute;
     top: 0;
@@ -119,8 +77,7 @@ a:hover
     pointer-events: none;
 }
 
-.header::before
-{
+.header::before {
     background-image: url('/img/BackgroundRed.png');
     z-index: -1;
     top: -400%;
@@ -129,34 +86,193 @@ a:hover
         filter 0.5s ease,
         background-image 0.8s ease;
 }
-
-.page:has(.header:hover) .header::before
-{
+.page:has(.header:hover) .header::before {
     filter: blur(4px);
     background-image: url(/img/BackgroundRedWithoutPeople.png);
 }
-
-.page
-{
-    display: flex;
-    flex-direction: column;
+.header a:link {
+    color: rgb(223, 223, 223);
+}
+.header p::first-letter {
+    font-size: 27px;
+}
+.header p, .header q {
+    color: #000;
+    font-size: 1.4em;
+    text-shadow: 1px 3px #d22395;
+    font-weight: bolder;
+}
+.header a:hover {
+    color: #000;
+    text-shadow: 1px 3px #d22395;
+    text-decoration: underline;
 }
 
-.header-quotes
-{
+.main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    outline: 5px solid #e3cc93;
+    filter: blur(4px);
+    pointer-events: none;
+}
+.main::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/BackgroundYellow.jpg");
+    background-size: cover;
+    background-position: center 37%;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.footer::before {
+    background-image: url('/img/BackgroundBlue.jpg');
+    z-index: -3;
+    background-position: center 65%;
+    background-attachment: local;
+    filter: blur(1px);
+}
+
+.learned-skills strong {
+    color: rgb(189, 118, 118);
+}
+.learned-skills ul {
+    padding-left: 25px;
+    color: rgb(165, 165, 146);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.learned-skills h3 {
+    padding-top: 20px;
+    color: rgb(165, 165, 146);
+    text-shadow: 1px 2px rgb(0, 0, 0);
+}
+
+.author-block h3 {
+    min-height: 1.5em;
+    display: block;
+    transition: color 0.3s ease,
+                font-size 0.3s ease;
+}
+
+.page:has(.round-crop-image:hover) .author-block h3 {
+    font-size: calc(1.17em - 1px);
+    text-shadow: 1px 3px #d22395;
+    color: rgb(0, 0, 0);
+}
+.page:has(.footer:hover) .below-footer {
+    opacity: 1;
+}
+
+.title-block:hover {
+    background-size: 110%;
+}
+.title-block:hover .title-content-block {
+    bottom: 0%;
+    backdrop-filter: blur(10px);
+    text-shadow: 1px 1px 1px #d22395;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    outline: 5px solid #2b2a63;
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nav-button {
+    font-family: "Caveat Brush", cursive;
+    background: #c99e3b;
+    border: 2px solid #bababa00;
+    border-radius: 30px 60px;
+    box-shadow: 5px 5px #0000006c;
+    padding: 10px;
+    margin-right: 20px;
+    transition: 
+        box-shadow 0.4s ease,
+        background-color 0.5s ease,
+        transform 0.3s ease;
+    cursor: pointer;
+}
+.nav-button:hover {
+    background: #ffb300;
+    transform: translateY(4px);
+    box-shadow: 1px 1px #0000006c;
+}
+
+/* 5. TABLES */
+table {
+    border-collapse: collapse;
+    text-align: center;
+    align-self: center;
+}
+
+td, th {
+    border: 1px solid #333;
+}
+
+/* 6. IMAGES & MEDIA */
+.round-crop-image {
+    border-radius: 0%;
+    transition: border-radius 0.2s ease;
+}
+
+.round-crop-image:hover {
+    border-radius: 50%;
+    border: 2px solid;
+    cursor: no-drop;
+}
+
+.screenshots-review {
+    width: 500px;
+}
+
+.gray-emoji {
+    filter: saturate(0);
+}
+
+.gradient-border {
+    border: 3px solid transparent;
+    animation: animation-gradient-border 20s ease-in-out infinite;
+}
+
+/* 7. HELPER CLASSES */
+.footer-link-word {
+    color: rgb(1, 118, 196);
+    font-size: larger;
+}
+
+.author-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    min-width: 140px;
+    min-height: 180px;
+}
+
+.header-deformation {
+    animation-name: animation-deformation-header;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    display: inline-block;
+}
+
+.header-quotes {
     float: left;
 }
 
-.main
-{
-    word-spacing: 4px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-
-.favorite-text
-{
+.favorite-text {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
@@ -168,8 +284,7 @@ a:hover
         5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.pipe
-{
+.pipe {
     font-style: normal;
     animation-name: animation-pipe-main;
     animation-iteration-count: infinite;
@@ -178,64 +293,7 @@ a:hover
     text-shadow: none;
 }
 
-.main-left
-{
-    flex: 2;
-}
-
-.main-right
-{
-    flex: 1;
-}
-
-.main::before
-{
-    content: "";
-    position: absolute;
-    background-image: url("/img/BackgroundYellow.jpg");
-    background-size: cover;
-    background-position: center 37%;
-    filter: blur(4px);
-    z-index: -1;
-}
-
-.main::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    outline: 5px solid #e3cc93;
-    filter: blur(4px);
-    pointer-events: none;
-}
-
-.footer-link-word
-{
-    color: rgb(1, 118, 196);
-    font-size: larger;
-}
-
-.footer::before
-{
-    background-image: url('/img/BackgroundBlue.jpg');
-    z-index: -3;
-    background-position: center 65%;
-    background-attachment: local;
-    filter: blur(1px);
-}
-
-.footer::after
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    outline: 5px solid #2b2a63;
-    filter: blur(4px);
-    pointer-events: none;
-}
-
-.below-footer
-{
+.below-footer {
     background-image: url(/img/YunoGasai.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -251,102 +309,7 @@ a:hover
     transition: opacity var(--animation-time-titles) ease;
 }
 
-/* 4. COMPONENTS & UI ELEMENTS */
-#nav-buttons
-{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-
-.nav-button
-{
-    font-family: "Caveat Brush", cursive;
-    background: #c99e3b;
-    border: 2px solid #bababa00;
-    border-radius: 30px 60px;
-    box-shadow: 5px 5px #0000006c;
-    padding: 10px;
-    margin-right: 20px;
-    transition: 
-        box-shadow 0.4s ease,
-        background-color 0.5s ease,
-        transform 0.3s ease;
-    cursor: pointer;
-}
-
-.nav-button:hover
-{
-    background: #ffb300;
-    transform: translateY(4px);
-    box-shadow: 1px 1px #0000006c;
-}
-
-/* 5. TABLES */
-table
-{
-    border-collapse: collapse;
-    text-align: center;
-    align-self: center;
-}
-
-td, th
-{
-    border: 1px solid #333;
-}
-
-/* 6. IMAGES & MEDIA */
-.round-crop-image
-{
-    border-radius: 0%;
-    transition: border-radius 0.2s ease;
-}
-
-.round-crop-image:hover
-{
-    border-radius: 50%;
-    border: 2px solid;
-    cursor: no-drop;
-}
-
-.screenshots-review
-{
-    width: 500px;
-}
-
-.gray-emoji
-{
-    filter: saturate(0);
-}
-
-.page:has(.footer:hover) .below-footer
-{
-    opacity: 1;
-}
-
-.author-block h3
-{
-    min-height: 1.5em;
-    display: block;
-    transition: color 0.3s ease,
-                font-size 0.3s ease;
-}
-
-.page:has(.round-crop-image:hover) .author-block h3
-{
-    font-size: calc(1.17em - 1px);
-    text-shadow: 1px 3px #d22395;
-    color: rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
-.titles-container
-{
+.titles-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -354,9 +317,7 @@ td, th
     flex: 100%;
     gap: 5px;
 }
-
-.title-block
-{
+.title-block {
     box-sizing: border-box;
     position: relative;
     height: 200px;
@@ -369,27 +330,7 @@ td, th
     transition: 
         background-size 0.4s cubic-bezier(0.69, 0.16, 0.76, 0.79);
 }
-
-.gradient-border
-{
-    border: 3px solid transparent;
-    animation: animation-gradient-border 20s ease-in-out infinite;
-}
-
-.title-block:hover
-{
-    background-size: 110%;
-}
-
-.title-block:hover .title-content-block
-{
-    bottom: 0%;
-    backdrop-filter: blur(10px);
-    text-shadow: 1px 1px 1px #d22395;
-}
-
-.title-content-block
-{
+.title-content-block {
     font-family: "Pacifico", 'Times New Roman', Times, serif;
     width: 100%;
     height: 100%;
@@ -403,9 +344,7 @@ td, th
         backdrop-filter var(--animation-time-titles) ease,
         text-shadow 0.6s ease;
 }
-
-.title-name
-{
+.title-name {
     text-align: center;
     font-size: 2em;
     width: 100%;
@@ -418,115 +357,70 @@ td, th
     align-items: center;
     justify-content: center;
 }
-
-.title-genres
-{
+.title-genres {
     text-align: center;
     display: inline-block;
     color: #000;
     text-shadow: 0 0 3px rgba(210, 35, 149, 0.8);
     font-weight: 500;
 }
-
-.title-description
-{
+.title-description {
     font-family: "Caveat Brush", cursive;
     padding: 5px;
     text-align: center;
     font-size: 1.1em;
 }
 
-.learned-skills strong
-{
-    color: rgb(189, 118, 118);
-}
 
-.learned-skills ul
-{
-    padding-left: 25px;
-    color: rgb(165, 165, 146);
-    text-shadow: 1px 1px rgb(0, 0, 0);
-}
-.learned-skills h3
-{
-    padding-top: 20px;
-    color: rgb(165, 165, 146);
-    text-shadow: 1px 2px rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
-
-@keyframes animation-gradient-border
-{
-    0%
-    {
+@keyframes animation-gradient-border {
+    0% {
         border-image: linear-gradient(0deg, #ffea00, #ff0080) 1;
     }
-    25%
-    {
+    25% {
         border-image: linear-gradient(90deg, #ffea00, #ff0080) 1;
     }
-    50%
-    {
+    50% {
         border-image: linear-gradient(180deg, #ffea00, #ff0080) 1;
     }
-    75%
-    {
+    75% {
         border-image: linear-gradient(270deg, #ffea00, #ff0080) 1;
     }
-    100%
-    {
+    100% {
         border-image: linear-gradient(360deg, #ffea00, #ff0080) 1;
     }
 }
 
-@keyframes animation-pipe-main
-{
-    0%
-    {
+@keyframes animation-pipe-main {
+    0% {
         color: #000000
     }
-    49%
-    {
+    49% {
         color: #000000
     }
-    50%
-    {
+    50% {
         color: #00000000
     }
-    100%
-    {
+    100% {
         color: #00000000
     }
 }
 
-@keyframes animation-deformation-header
-{
-    99%
-    {
+@keyframes animation-deformation-header {
+    99% {
         transform: skew(0deg);
     }
-    99.61%
-    {
+    99.61% {
         transform: skew(140deg);
         color: #ff0000;
     }
-    99.32%
-    {
+    99.32% {
         transform: skew(0deg);
         color: #000;
     }
 }
 
-@media (max-width: 896px)
-{
-    .titles-container
-    {
+@media (max-width: 896px) {
+    .titles-container {
         width: 104%;   
     }
     .title-block {
@@ -535,61 +429,47 @@ td, th
         aspect-ratio: 2 / 1;
         height: auto;
     }
-    .title-description
-    {
+    .title-description {
         font-size: clamp(0.95em, 3.5vw, 1.3em);
         line-height: 1.25;
         overflow-wrap: break-word;
     }
-    .header-quotes
-    {
+    .header-quotes {
         font-size: 10px;
         max-width: 90%;
         position: absolute;
         bottom: 0;
     }
-    .header p, q
-    {
+    .header p, q {
         font-size: 1.2em;
         text-shadow: 1px 2px #d22395;
     }
-    .header p::first-letter
-    {
+    .header p::first-letter {
         font-size: 2.0em;
     }
-    .author-block
-    {
+    .author-block {
         display: none;
     }
 }
 
-@media (max-width: 320px)
-{
-    body
-    {
+@media (max-width: 320px) {
+    body {
         padding: 10px;
     }
-    .author-block
-    {
+    .author-block {
         position: relative;
         margin: 10px auto;
     }
     
-    .nav-button
-    {
+    .nav-button {
         margin-right: 10px;
         padding: 8px;
         font-size: 0.9em;
     }
-    .favorite-text
-    {
+    .favorite-text {
         font-size: 1.8em;
     }
 }
-
-
-
-
 
 /*
 1. Reset & Global - Universal styles first
