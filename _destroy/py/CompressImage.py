@@ -3,10 +3,10 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 
-folder_path = r"E:\All Folders\site.github\chelovedus.github.io\img\anime-titles"
+folder_path = r"C:\Users\ZOWARUDOO\Documents\VS Projects\test-site\img\anime-titles"
 initial_quality = 90
-max_size = (1000, 1000)
-max_file_size = 0.1 * 1024 * 1024
+max_size = (700, 700)
+max_file_size = 0.05 * 1024 * 1024
 
 
 def compress_image(file_path, max_size, max_file_size):

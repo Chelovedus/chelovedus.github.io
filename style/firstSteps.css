@@ -20,6 +20,7 @@ body
     max-width: 1920px;
     margin: 0 auto;
     padding: 20px;
+    font-size: clamp(14px, 1.2vw, 16px);
 }
 
 /* 2. TEXT ELEMENTS */
@@ -371,7 +372,7 @@ td, th
 
 .gradient-border
 {
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     /* box-shadow: 8px 4px 5px #000000; */
     animation: animation-gradient-border 20s ease-in-out infinite;
 
@@ -424,6 +425,9 @@ td, th
 {
     text-align: center;
     display: inline-block;
+    color: #000;
+    text-shadow: 0 0 3px rgba(210, 35, 149, 0.8);
+    font-weight: 500;
 }
 
 .title-description
@@ -431,6 +435,7 @@ td, th
     font-family: "Caveat Brush", cursive;
     padding: 5px;
     text-align: center;
+    font-size: 1.3em;
 }
 
 
@@ -510,20 +515,17 @@ td, th
     {
         width: 104%;   
     }
-
     .title-block {
         width: 100%;
         max-width: 100%;
         aspect-ratio: 2 / 1;
         height: auto;
     }
-    .title-name
-    {
-        font-size: 1.5em;
-    }
     .title-description
     {
-        font-size: calc(3vw);
+        font-size: clamp(0.95em, 3.5vw, 1.3em);
+        line-height: 1.25;
+        overflow-wrap: break-word;
     }
     .header-quotes
     {
@@ -554,10 +556,7 @@ td, th
         padding: 10px;
     }
     
-    .header, .main, .footer {
-        padding: 0.5em;
-        margin: 10px 0;
-    }
+    
     
     .author-block
     {
