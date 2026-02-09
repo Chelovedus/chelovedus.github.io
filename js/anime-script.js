@@ -1,12 +1,23 @@
 document.addEventListener("DOMContentLoaded", loadAnimeData)
 
+const animeListRu = '/data/anime-list-ru.json';
+const animeListEn = '/data/anime-list-en.json';
+var animeListData = '';
+
 const template = document.getElementById('title-block-template');
 const container = document.querySelector('.titles-container');
 
 async function loadAnimeData() {
-    let response =  await fetch('/data/anime-list.json');
+    selectLanguage();
+    let response =  await fetch(animeListData);
     let fileData = await response.json();
     processAnimeData(fileData);
+}
+
+function selectLanguage()
+{
+    let preferredLanguage = navigator.languages ? navigator.languages[0] : navigator.language || navigator.userLanguage;
+    animeListData = preferredLanguage == 'ru' ? animeListRu : animeListEn;
 }
 
 function processAnimeData(fileData)
@@ -32,4 +43,3 @@ function createElement(i, fileData, element, block, nameElement, descriptionElem
     block.style.backgroundImage = `url(${fileData[i].image})`;
     container.appendChild(element);
 }
-

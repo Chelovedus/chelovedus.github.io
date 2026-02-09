@@ -94,12 +94,6 @@ a:hover
     display: flex;
 }
 
-
-.footer p 
-{
-    margin: 0;
-}
-
 /* 3. LAYOUT SECTIONS */
 .header, .main, .footer
 {
@@ -213,6 +207,12 @@ a:hover
     outline: 5px solid #e3cc93;
     filter: blur(4px);
     pointer-events: none;
+}
+
+.footer-link-word
+{
+    color: rgb(1, 118, 196);
+    font-size: larger;
 }
 
 .footer::before
@@ -373,9 +373,7 @@ td, th
 .gradient-border
 {
     border: 3px solid transparent;
-    /* box-shadow: 8px 4px 5px #000000; */
     animation: animation-gradient-border 20s ease-in-out infinite;
-
 }
 
 .title-block:hover
@@ -435,10 +433,26 @@ td, th
     font-family: "Caveat Brush", cursive;
     padding: 5px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
+.learned-skills strong
+{
+    color: rgb(189, 118, 118);
+}
 
+.learned-skills ul
+{
+    padding-left: 25px;
+    color: rgb(165, 165, 146);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.learned-skills h3
+{
+    padding-top: 20px;
+    color: rgb(165, 165, 146);
+    text-shadow: 1px 2px rgb(0, 0, 0);
+}
 
 
 
@@ -555,9 +569,6 @@ td, th
     {
         padding: 10px;
     }
-    
-    
-    
     .author-block
     {
         position: relative;
@@ -570,7 +581,6 @@ td, th
         padding: 8px;
         font-size: 0.9em;
     }
-    
     .favorite-text
     {
         font-size: 1.8em;

@@ -12,36 +12,36 @@
     
     <link rel="preload" href="/img/BackgroundRedWithoutPeople.png" as="image" type="image/png">
 
-    <link rel="stylesheet" href="style/firstSteps.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="page">
         <header class="header">
             <!--Upper left header-->
-            <section class="header-quotes">
-                <q lang="de">I like anime, computer games and cutest things</q>
-                <p>
-                    Don`t give up!
-                </p>
-                <p>
-                    Improve yourself while you`re <span class="header-deformation">still</span> alive
-                </p>
-            </section>
+                <div class="header-quotes">
+                    <q lang="de">I like anime, computer games and cutest things</q>
+                    <p>
+                        Don`t give up!
+                    </p>
+                    <p>
+                        Improve yourself while you`re <span class="header-deformation">still</span> alive
+                    </p>
+                </div>
             <!--Upper right header-->
-            <section class="author-block">
+            <div class="author-block">
                 <a href="http://t.me/Chelovedus" target="_blank" class="link-author"><h3>@Chelovedus</h3></a>
                 <img src="img/Avatar.jpg" class="round-crop-image" alt="Avatar" height="120" width="120" 
                 title="Nyah?!">
-            </section>
+            </div>
         </header>
 
         <nav>
             <!--Upper middle header-->
-            <section id="nav-buttons">
-                <a href="https://shikimori.one/Cheloved" target="_blank"><button class="nav-button">MY SKIKIMORI</button></a>
+            <div id="nav-buttons">
+                <a href="https://shikimori.one/Cheloved" target="_blank"><button class="nav-button">MY SHIKIMORI</button></a>
                 <a href="https://docs.google.com/spreadsheets/d/1-NnvYVrHAl4CnYZdcb7AfSCFVxt8w0uy-_yobK97mLs/edit" target="_blank"><button class="nav-button">MY GOOGLE SHEETS</button></a>
-            </section>
+            </div>
         </nav>
 
         <main class="main">
@@ -50,11 +50,32 @@
         </main>
 
         <footer class="footer">
-            <p>Links:
-            <br><a href="https://youtu.be/0dJyrrNiB8o?list=PLMB6wLyKp7lV9YoWTMCztq-KXYhYPB09K&t=452" target="_blank">Education video about HTML 5</a>
-            <br><a href="https://youtu.be/PkZNo7MFNFg?t=7242" target="_blank">Education video about JS</a>
-            <br><a href="https://validator.w3.org/nu/#file" target="_blank">Check on warnings in my HTML5 syntax</a>
-        </p>
+            <p>
+                <span class="footer-link-word">Links:</span>
+                <br><a href="https://youtu.be/0dJyrrNiB8o?list=PLMB6wLyKp7lV9YoWTMCztq-KXYhYPB09K&t=452" target="_blank">Education video about HTML 5</a>
+                <br><a href="https://youtu.be/PkZNo7MFNFg?t=7242" target="_blank">Education video about JS</a>
+                <br><a href="https://validator.w3.org/nu/#file" target="_blank">Check on warnings in my HTML5 syntax</a>
+            </p>
+
+        <section class="learned-skills">
+            <h3>Что было изучено и применено при создании сайта:</h3>
+                    <ul>
+                        <li><strong>Семантическая разметка HTML5. </strong>Использование header, nav, main, section, footer, template, корректная структура документа, meta-теги, lang, alt, title.</li>
+                        <li><strong>Адаптивная вёрстка. </strong>Meta viewport, медиазапросы @media, относительные единицы (clamp, %, vw, vh, aspect-ratio).</li>
+                        <li><strong>CSS-архитектура и организация стилей. </strong>Логическое разделение стилей по блокам (reset, typography, layout, components), использование CSS-переменных (:root).</li>
+                        <li><strong>Современные возможности CSS. </strong>flexbox, gap, backdrop-filter, filter, aspect-ratio, :has(), псевдоэлементы ::before / ::after, transition, animation, @keyframes.</li>
+                        <li><strong>Работа с изображениями. </strong>background-image, background-size, preload, оптимизация отображения под разные экраны.</li>
+                        <li><strong>Работа со шрифтами. </strong>Подключение Google Fonts, использование нескольких гарнитур, fallback-шрифты.</li>
+                        <li><strong>Модульный JavaScript. </strong>Подключение скрипта как type="module".</li>
+                        <li><strong>Работа с DOM. </strong>DOMContentLoaded, querySelector, cloneNode, appendChild, работа с template.</li>
+                        <li><strong>Асинхронный JavaScript. </strong>async / await, fetch, загрузка.</li>
+                        <li><strong>Работа с JSON. </strong>Обработка JSON-данных для генерации тайлов.</li>
+                        <li><strong>Разделение данных и логики. </strong>Хранение данных в JSON-файлах, генерация интерфейса на основе данных.</li>
+                        <li><strong>Архитектура JS-кода. </strong>Разделение на функции с чёткой ответственностью (load, selectLanguage, process, createElement).</li>
+                        <li><strong>Определение языка пользователя. </strong>Использование navigator.language / navigator.languages и переключение ресурсов в зависимости от языка.</li>
+                        <li><strong>Анимации и визуальные эффекты. </strong>Анимация текста, градиентных рамок, hover-эффекты, плавные переходы, blur-эффекты, динамическое изменение фона.</li>
+</ul>
+        </section>
         </footer>
         
         <div class="below-footer"></div>
